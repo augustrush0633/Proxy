@@ -150,6 +150,10 @@ proxies: null
 proxy-groups:
 
   - {name: ♻️ Auto, <<: *a4}
+  - {name: 🚀 Manual, <<: *a2}
+  - {name: 🌏 Global, <<: *a3}
+  - {name: MATCH, <<: *a3}
+
   - {name: HK, <<: *a4, filter: "香港|HK|(?i)Hong"}
   - {name: JP, <<: *a4, filter: "日本|东京|JP|(?i)Japan"}   
   - {name: TW, <<: *a4, filter: "台湾|TW|(?i)Taiwan"}
@@ -159,9 +163,6 @@ proxy-groups:
   - {name: AE, <<: *a4, filter: "阿联酋|迪拜"}
   - {name: TR, <<: *a4, filter: "土耳其|TR|(?i)Turkey"}
 
-  - {name: 🚀 Manual, <<: *a2}
-  - {name: 🌏 Global, <<: *a3}
-  - {name: MATCH, <<: *a3}
   - {name: Adobe, type: select, proxies: [REJECT] }
   - {name: Apple, type: select, proxies: [♻️ Auto,HK,JP,TW,US,SG,TH,AE,TR,DIRECT,REJECT], icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Apple.png }
   - {name: Amazon, type: select, proxies: [♻️ Auto,HK,JP,TW,US,SG,TH,AE,TR,DIRECT,REJECT], icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Amazon.png }
