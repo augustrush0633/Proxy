@@ -112,7 +112,7 @@ NodeParam: &NodeParam {type: http, interval: 3600, health-check: {enable: true, 
 # 锚点 - 节点订阅
 proxy-providers: 
   Subscribe:
-    url: 'http://127.0.0.1:38324/download/collection/%E7%BB%84%E5%90%88%E8%AE%A2%E9%98%85'
+    url: 'http://127.0.0.1:38324/download/collection/'
     <<: *NodeParam
     path: './proxy_providers/Subscribe.yaml'
     override:
