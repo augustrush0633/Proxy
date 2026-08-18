@@ -7,7 +7,7 @@
 
 [Argument]
 v2ex_enable=swirch,"true","false",tag=V2EX抓包开关, desc=是否开启V2EX抓包
-CRONEXP=input,"0 9 * * *",tag=Crontab表达式, desc=推荐地址: "https://www.bejson.com/othertools/cron/"
+CRONEXP=input,"10 21 * * *",tag=Crontab表达式, desc=推荐地址: "https://www.bejson.com/othertools/cron/"
 timeout=input,"60",tag=脚本运行最大时间, desc=脚本运行最大时间
 
 [Rewrite]
