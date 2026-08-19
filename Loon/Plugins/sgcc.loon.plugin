@@ -16,7 +16,7 @@ notify_all_accounts=switch,"false","true",tag=是否通知全部户号, desc=是
 timeout=input,"60",tag=脚本运行最大时间, desc=脚本运行最大时间
 
 [Rule]
-DOMAIN,api.wsgw-rewrite.com,PROXY
+DOMAIN,api.wsgw-rewrite.com,DIRECT
 
 [Script]
 http-request ^https?:\/\/api\.wsgw-rewrite\.com\/electricity\/bill\/all script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/95598/95598.js, requires-body=true, timeout={timeout}, tag=网上国网接口重写, enable={sgcc_enable}
