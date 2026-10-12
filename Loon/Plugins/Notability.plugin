@@ -1,0 +1,21 @@
+#!name=Notability Plus
+
+#!desc=Notability解锁
+
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/notability.png
+
+#!homepage=https://yfamilys.com
+
+#!author=litieyin
+
+
+
+[MITM]
+
+hostname=notability.com
+
+
+
+[Script]
+
+http-response ^https://notability.com/subscriptions requires-body=1,script-path=https://raw.githubusercontent.com/augustrush0633/Proxy/refs/heads/main/Loon/Script/notability.js
